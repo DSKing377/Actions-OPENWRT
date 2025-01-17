@@ -28,4 +28,4 @@ export OpenClash_Core="1"                   # 增加OpenClash时,把核心下载
 
 # 更换固件内核
 export Replace_Kernel="0"                    # 更换内核版本,在对应源码的[target/linux/架构]查看patches-x.x,看看x.x有啥就有啥内核了(填入内核x.x版本号,填0为不作修改)
-EOF
+
