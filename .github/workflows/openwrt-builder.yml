@@ -49,6 +49,9 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
+
+    - name: Install bc
+      run: sudo apt-get install -y bc
         
     - name: 释放Ubuntu磁盘空间
       uses: endersonmenezes/free-disk-space@v2
