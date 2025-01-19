@@ -148,9 +148,23 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
+        # 生成 Release 标签
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")" >> $GITHUB_OUTPUT
+
+        # 创建 release.txt 并添加 Release 说明
         touch release.txt
-        [ ${UPLOAD_GOFILE} = true && ${{ steps.gofile.outputs.url }} ] && echo "🔗 [GoFile](${{ steps.gofile.outputs.url }})" >> release.txt
+        echo "## Release Notes" > release.txt
+        echo "" >> release.txt
+        echo "### 📦 Updates and Changes" >> release.txt
+        echo "- Added new features" >> release.txt
+        echo "- Fixed bugs" >> release.txt
+        echo "" >> release.txt
+
+        # 如果上传了 GoFile 链接，将其附加到 Release 说明中
+        [ ${UPLOAD_GOFILE} = true && ${{ steps.gofile.outputs.url }} ] && \
+        echo "🔗 [Download GoFile](${{ steps.gofile.outputs.url }})" >> release.txt
+
+        # 设置状态为 success
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload firmware to release
@@ -173,7 +187,7 @@ jobs:
       uses: dev-drprasad/delete-older-releases@master
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
-        keep_latest: 3
+        keep_latest: 8
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
