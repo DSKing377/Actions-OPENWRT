@@ -21,7 +21,8 @@ env:
   REPO_BRANCH: "openwrt-24.10" 
   FEEDS_CONF: feeds.conf.ax1800
   CONFIG_FILE: AX1800.config
-  DIY_SCRIPT: ax1800-diy-script.sh
+  DIY_P1_SH: diy-part1.sh
+  DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
