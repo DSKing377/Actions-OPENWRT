@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: jdc ax1800 pro 24.10 OpenWrt Builder
+name: jdc ax1800 pro 24.10 OpenWrt
 
 on:
   repository_dispatch:
