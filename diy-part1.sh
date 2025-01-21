@@ -17,11 +17,11 @@
 # echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 # echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo 'src-git passwallpackages https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
+echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
 echo 'src-git openclash https://github.com/vernesong/OpenClash' >>feeds.conf.default
 echo 'src-git homeproxy https://github.com/immortalwrt/homeproxy' >>feeds.conf.default
-echo 'src-git argon https://github.com/jerrykuku/luci-theme-argon' >>feeds.conf.default
+echo 'src-git argon https://github.com/jerrykuku/luci-theme-argon.git' >>feeds.conf.default
 echo 'src-git quickstart https://github.com/animegasan/luci-app-quickstart' >>feeds.conf.default
 
 # 添加额外插件
