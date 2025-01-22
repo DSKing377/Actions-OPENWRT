@@ -44,7 +44,7 @@ git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/
 # git clone --depth=1 https://github.com/immortalwrt/homeproxy package/luci-app-homeproxy
 
 # SmartDNS
-git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
+git clone --depth=1 https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
 git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
 
 # msd_lite
