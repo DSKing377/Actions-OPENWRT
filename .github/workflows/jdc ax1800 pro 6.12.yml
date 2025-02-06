@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: jdc ax1800 pro 24.10-6.12 OpenWrt
+name: jdc ax1800 pro 6.12 OpenWrt
 on:
   repository_dispatch:
   workflow_dispatch:
