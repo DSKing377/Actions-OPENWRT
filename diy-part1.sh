@@ -43,7 +43,7 @@ git clone --depth=1 https://github.com/animegasan/luci-app-quickstart package/lu
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
-git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
+git clone master https://github.com/vernesong/OpenClash luci-app-openclash
 git clone --depth=1 https://github.com/immortalwrt/homeproxy package/luci-app-homeproxy
 
 # SmartDNS
@@ -65,8 +65,8 @@ git clone --depth=1 https://github.com/immortalwrt/homeproxy package/luci-app-ho
 # git_sparse_clone master https://github.com/linkease/nas-packages network/services/ddnsto
 
 # iStore
-git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
-git_sparse_clone main https://github.com/linkease/istore luci
+git clone --depth=1 https://github.com/linkease/istore-ui app-store-ui
+git clone --depth=1 https://github.com/linkease/istore luci
 
 # argon
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
