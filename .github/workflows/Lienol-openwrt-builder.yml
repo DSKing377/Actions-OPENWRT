@@ -38,8 +38,8 @@ jobs:
 
     - name: Install Go 1.22
       run: |
-        wget https://golang.org/dl/go1.22.linux-amd64.tar.gz
-        sudo tar -C /usr/local -xvzf go1.22.linux-amd64.tar.gz
+        wget https://go.dev/dl/go1.22.0.linux-amd64.tar.gz
+        sudo tar -C /usr/local -xvzf go1.22.0.linux-amd64.tar.gz
         export PATH=$PATH:/usr/local/go/bin
         go version
         
