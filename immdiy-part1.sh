@@ -65,8 +65,8 @@ git clone --depth=1 https://github.com/animegasan/luci-app-quickstart package/lu
 # git_sparse_clone master https://github.com/linkease/nas-packages network/services/ddnsto
 
 # iStore
-git clone --depth=1 https://github.com/linkease/istore-ui app-store-ui
-git clone --depth=1 https://github.com/linkease/istore luci
+# git clone --depth=1 https://github.com/linkease/istore-ui app-store-ui
+# git clone --depth=1 https://github.com/linkease/istore luci
 
 # argon
 # git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
